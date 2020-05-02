@@ -1,0 +1,16 @@
+body.emerg{
+	background-color:#300000;
+	color:#fb3535;
+}
+.emerg .top-bar{
+	background-color:red;
+}
+.emerg .posti{
+	background-color:red;
+}
+.emerg a{color:orange;/*text-decoration:none;*/}
+.emerg .posti{color:yellow;text-decoration:none;}
+.emerg .article,.emerg footer{
+	background-color:darkred;  /* HERE */
+	border-color:red; /* HERE */
+}

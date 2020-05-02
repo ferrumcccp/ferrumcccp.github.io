@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><title>首页 - Ferrum CCCP's blog</title>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><link rel="stylesheet" type="text/css" href="emerg.css"><link rel="stylesheet" type="text/css" href="ferrous.css">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+	<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+	<link href="icon.png" rel="Shortcut Icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/katex.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/katex.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/contrib/auto-render.js"></script>
+        <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+        <script src="https://ajax.proxy.ustclug.org/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <body id="body">
+        <div class="top-bar">
+        <a href="index.html" class="tpi icon-top primary"><img src="home.svg" class="svg"></a>
+        <p class="tpi">首页</p>
+        <a href="javascript:;" onclick="javascript:open_content();" class="tpi icon-top"><img src="top.svg" class="svg"></a></div>
+        <div class="article"><div class="frontpage"><div class="frontpage-overlay"><div class="frontpage-inner container"><h1>Ferrum CCCP</h1><strong>一只文化课小蒟蒻</strong><a class="primary" onclick="close_front()">Enter BLog</a></div></div></div><br>
+<div class="posti-group"><div class="posti alone"><a href="multi_lang.html">切换语言/Switch Language</a></div><div class="posti alone"><a href="multi_test.html">Test zone</a></div></div></div>
+<div id="gitalk-container" class="container"></div>
+	<script>
+
+if(location.href.substr(0,5)=="file:"||location.hostname.substr(0,3)=="127"){
+    $("#gitalk-container").css("display","none");}else{
+const gitalk = new Gitalk({
+  clientID: '133aa544ab7aacc0e908',
+  clientSecret: 'fe362d1dd84949381a7cb9bc6701219881316394',
+  repo: 'afogi-comment',
+  owner: 'awayfromoi',
+  admin: ['awayfromoi','ferrumcccp'],
+  id: location.pathname,
+  distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+}
+	</script>
+    <!-- 1-800-273-8255 -->
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=518077470&auto=1&height=66" class="embed-player"></iframe>
+	<div id="gitalk-container"></div>
+	<footer>
+        <script src="wycero-1.js"></script>
+        <p>Copyright 2020 Ferrum CCCP</p>
+        <p>Powered By: 
+        <a href="http://nodejs.org">Node.js</a>
+        <a href="https://katex.org">$\KaTeX$</a>
+        <a href="https://highlightjs.org/">Highlightjs</a></p>
+        <p>Hosted On coding.me</p>
+        </footer>
+        <script >hljs.initHighlightingOnLoad();</script>
+        <script>
+            renderMathInElement(document.body,
+           {
+                      delimiters: [
+                          {left: "$$", right: "$$", display: true},
+                          {left: "$", right: "$", display: false}
+                      ]
+                  }
+          );
+        </script></body></html>
