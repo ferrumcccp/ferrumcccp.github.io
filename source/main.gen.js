@@ -153,6 +153,9 @@ gitalk.render('gitalk-container')
           );
         </script>`+"</body></html>";
         return ret;}
+	case"pingan":{
+		return "<div class=\"pingan\">"+tt+"</div>";
+	}
         case"h1":
         case"h2":
         case"h3":

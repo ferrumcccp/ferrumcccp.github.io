@@ -30,3 +30,20 @@ function close_front(){
     $(".frontpage").css("opacity","0");
     setTimeout(()=>{$(".frontpage").css("display","none");},500)
 }
+pingan=""
+cnt=0
+function addpingan(){
+	cnt++;
+	pingan+=""+cnt+"元平安";
+}
+$(document).scroll(()=>{
+	console.log("scroll");
+	if($(document).scrollTop()>=0.95*($(document).height()-$(window).height())){
+		console.log("upd")
+		pingan="";
+		for(let i=0;i<=1000;i++)addpingan();
+		$(".pingan").text($(".pingan").text()+pingan);
+	}
+})
+for(let i=0;i<=5000;i++)addpingan();
+$(".pingan").text($(".pingan").text()+pingan);
